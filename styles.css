@@ -6,12 +6,46 @@ body {
     text-align: center;
     color: #4d4d4d;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Styles for smartphones */
+    body {
+        background-size: cover;
+        background-image: url(background_mobile.jpg);
+        background-repeat: no-repeat;
+        font-size: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+
+    }
+
+    .container button {
+        font-family: 'Courier New', Courier, monospace;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        width: 300px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+    }
 }
 
 h1 {
